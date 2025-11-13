@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atri - Portfolio</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="container nav-container">
+            <a href="#" class="logo">Atri</a>
+            
+            <button id="mobile-menu-button" class="mobile-menu-toggle" aria-label="Open menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            
+            <ul class="nav-menu-desktop">
+                <li><a href="#about" class="nav-link" data-page="about">About</a></li>
+                <li><a href="#projects" class="nav-link" data-page="projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div id="mobile-menu" class="nav-menu-mobile hidden">
+            <ul>
+                <li><a href="#about" class="nav-link mobile-link" data-page="about">About</a></li>
+                <li><a href="#projects" class="nav-link mobile-link" data-page="projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link mobile-link" data-page="contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        
+        <section id="page-about" class="page-section about-section">
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <img 
+                        src="https://placehold.co/300x300/e0e7ff/3730a3?text=Atri" 
+                        alt="A portrait of Atri" 
+                        class="about-image"
+                        onerror="this.src='https://placehold.co/300x300/e0e7ff/3730a3?text=Profile+Pic'"
+                    >
+                </div>
+                
+                <div class="about-text-wrapper">
+                    <h1 class="about-title">Hi, I'm Atri</h1>
+                    <p class="about-subtitle">Passionate Web Developer</p>
+                    <p class="about-description">
+                        I'm a creative developer, specializing in building (and occasionally designing)
+                        exceptional digital experiences. With a background in front-end development, I love turning complex
+                        problems into simple, beautiful, and intuitive solutions.
+                    </p>
+                    
+                    <div class="skills-container">
+                        <span class="skill-pill bg-blue">React</span>
+                        <span class="skill-pill bg-green">Node.js</span>
+                        <span class="skill-pill bg-yellow">JavaScript</span>
+                        <span class="skill-pill bg-red">Tailwind CSS</span>
+                        <span class="skill-pill bg-purple">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-projects" class="page-section hidden">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-grid">
+                
+                <div class="project-card">
+                    <img 
+                        src="https://placehold.co/600x400/e0e7ff/3730a3?text=Project+Alpha" 
+                        alt="Project Alpha" 
+                        class="project-image"
+                        onerror="this.src='https://placehold.co/600x400/e0e7ff/3730a3?text=Image'"
+                    >
+                    <div class="project-content">
+                        <h3 class="project-title">Project Alpha</h3>
+                        <p class="project-description">A full-featured e-commerce platform built with React, Node.js, and Stripe integration.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Stripe</span>
+                            <span class="project-tag">Express</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link-github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img 
+                        src="https://placehold.co/600x400/d1fae5/059669?text=Project+Beta" 
+                        alt="Project Beta" 
+                        class="project-image"
+                        onerror="this.src='https://placehold.co/600x400/d1fae5/059669?text=Image'"
+                    >
+                    <div class="project-content">
+                        <h3 class="project-title">Project Beta</h3>
+                        <p class="project-description">A real-time chat application using WebSockets, Vue.js, and Firebase for data storage.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">WebSocket</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link-github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img 
+                        src="https://placehold.co/600x400/feefc7/f59e0b?text=Project+Gamma" 
+                        alt="Project Gamma" 
+                        class="project-image"
+                        onerror="this.src='https://placehold.co/600x400/feefc7/f59e0b?text=Image'"
+                    >
+                    <div class="project-content">
+                        <h3 class="project-title">Project Gamma</h3>
+                        <p class="project-description">A data visualization dashboard for financial analytics, built with D3.js and React.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">D3.js</span>
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Data Viz</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link-github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="page-contact" class="page-section hidden">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-form-container">
+                <p class="contact-intro">
+                    Have a question or want to work together? Feel free to reach out!
+                </p>
+                
+                <form id="contact-form" class="contact-form">
+                    <div>
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" required class="form-input">
+                    </div>
+                    <div>
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" required class="form-input">
+                    </div>
+                    <div>
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" rows="5" required class="form-input"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="form-submit-button">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+                
+                <div id="form-message" class="form-success-message hidden">
+                    Thank you for your message! I'll get back to you soon.
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-copyright">
+                &copy; 2025 Atri. All rights reserved.
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="GitHub">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.17 6.839 9.5.49.09.66-.213.66-.473 0-.234-.01-1.046-.015-2.04-2.782.602-3.369-1.34-3.369-1.34-.446-1.13-1.088-1.432-1.088-1.432-.89-.608.068-.596.068-.596.985.068 1.504 1.012 1.504 1.012.875 1.499 2.295 1.066 2.855.815.088-.633.342-1.066.615-1.312-2.18-.248-4.467-1.09-4.467-4.857 0-1.07.38-1.946 1.008-2.63-.1-.248-.437-1.242.096-2.593 0 0 .823-.264 2.697 1.007a9.43 9.43 0 012.454-.33c.828.01 1.65.11 2.454.33C16.03 5.34 16.85 5.604 16.85 5.604c.535 1.35.198 2.345.1 2.593.63.684 1.006 1.56 1.006 2.63 0 3.778-2.29 4.607-4.475 4.85.35.305.655.91.655 1.833 0 1.325-.012 2.395-.012 2.72 0 .26.168.567.67.47C19.137 20.184 22 16.442 22 12.017 22 6.484 17.523 2 12 2z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.783-1.75-1.75s.784-1.75 1.75-1.75 1.75.783 1.75 1.75-.783 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-3.993-.201-7.547-2.108-9.922-5.033-.413.711-.645 1.538-.645 2.417 0 1.668.847 3.141 2.13 3.995-.787-.025-1.528-.242-2.17-.598v.064c0 2.328 1.657 4.269 3.858 4.711-.405.111-.832.17-1.274.17-.311 0-.615-.03-.916-.086.612 1.912 2.38 3.303 4.475 3.341-1.644 1.288-3.717 2.053-5.961 2.053-.386 0-.766-.023-1.141-.067 2.122 1.365 4.648 2.158 7.34 2.158 8.807 0 13.61-7.277 13.61-13.61 0-.207-.005-.413-.014-.617.935-.675 1.745-1.519 2.388-2.484z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
